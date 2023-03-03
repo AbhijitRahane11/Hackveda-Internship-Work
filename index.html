@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic JavaScript</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <h1>User input Form</h1>
+    <form
+      action="/userDetail.php"
+      name="myForm"
+      onsubmit="return validateform()"
+      method="post"
+    >
+      <div class="userinput" id="name">
+        Name
+        <input
+          type="text"
+          name="username"
+          placeholder="Enter a name "
+          required
+        /><span class="errormsg"></span>
+      </div>
+      <div class="userinput" id="email">
+        Email
+        <input
+          type="email"
+          name="useremail"
+          placeholder="Enter a Email"
+          required
+        />
+        <span class="errormsg"></span>
+      </div>
+      <div class="userinput" id="phone">
+        Phone
+        <input
+          type="phone"
+          name="userphone"
+          placeholder="Enter a phone number"
+          required
+        /><span class="errormsg"></span>
+      </div>
+      <div class="userinput" id="pass">
+        Password
+        <input
+          type="password"
+          name="userpass"
+          placeholder="Enter a password"
+          required
+        /><span class="errormsg"></span>
+      </div>
+      <div class="userinput" id="cpass">
+        Confirm Password
+        <input
+          type="password"
+          name="usercpass"
+          placeholder="Confirm Password"
+          required
+        />
+      </div>
+      <input class="button" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
