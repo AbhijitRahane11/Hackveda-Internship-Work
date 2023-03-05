@@ -4,46 +4,59 @@
     <meta charset="utf-8" />
     <title>User Form</title>
     <link rel="stylesheet" href="UserForm.css" />
+    <script src="UserForm.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <div class="contact-section">
-      <h1 class="animate-charcter">Hackvᴇda</h1>
+      <h1 class="animate-charcter">Hackveda</h1>
 
-      <span>User Form</span>
+      <h2 id="title">User Form</h2>
 
       <div border-style: dashed; class="border"></div>
-      <form class="contact-form" action="index.html" method="post">
-        <b class="a">Full Name</b>
+      <form class="contact-form" action="userDetail.php"name="contact-form" onsubmit="return validateform()" method="post">
+        <div id="name"><b class="a">Full Name</b>
         <input
           type="text"
           class="contact-form-text"
           placeholder="Enter here name"
           required
-        />
-        <b class="a">Email</b>
+        /><span class="errormsg"></span>
+      </div>
+      <div id="email"> <b class="a">Email</b>
         <input
           type="email"
           class="contact-form-text"
           placeholder="Enter here email"
           required
-        />
+        /><span class="errormsg"></span></div>
+        <div id="phone">
         <b class="a">Phone Number</b>
         <input
           type="text"
           class="contact-form-text"
           placeholder="Enter here phone number"
           required
-        />
-        <b class="a">Address</b>
-        <textarea
+        /><span class="errormsg"></span></div>
+        <div id="pass">
+        <b class="a">Password</b>
+        <input
           class="contact-form-text"
           placeholder="Enter your message"
           required
-        ></textarea>
+        ></input><span class="errormsg"></span>
+      </div>
+        <div id="cpass">
+        <b class="a">confirm password</b>
+        <input
+          class="contact-form-text"
+          placeholder="Enter your message"
+          required
+        ></input><span class="errormsg"></span>
+      </div>
         <input type="submit" class="contact-form-btn" value="Send" />
       </form>
     </div>
-    <h1 class="animate-charcter">HackVᴇda</h1>
+    <h1 class="animate-charcter">HackVeda</h1>
   </body>
 </html>

@@ -167,7 +167,7 @@
   width: 100vw;
   }
   
-  span {
+  h2 {
   position: absolute;
   left: 50%;
   top: 30;
@@ -198,7 +198,7 @@
   transition: 1s;
   }
    */
-  span::after {
+  h2::after {
   content: "User Form";
   position: absolute;
   color: transparent;
@@ -215,12 +215,12 @@
   transition: 1s;
   }
   
-  span:hover:before {
+  h2:hover:before {
   top: 10px;
   left: 10px;
   }
   
-  span:hover:after {
+  h2:hover:after {
   top: -10px;
   left: -10px;
   } 
